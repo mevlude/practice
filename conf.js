@@ -3,11 +3,29 @@ var HtmlReporter = require('protractor-beautiful-reporter');
 
 exports.config = {
    
-    directConnect : true,
-  
-   capabilities: {
-    browserName: 'chrome'
-  },
+   // directConnect : true,
+    SeleniumAddress: 'ondemand.saucelabs.com:80/wd/hub',
+    sauceUser: 'evac',
+    sauceKey: '43f3e245-0f82-4f5d-9db5-98701241dacd',
+        //directConnect: true,
+        multiCapabilities: [{
+            browserName: 'firefox',
+            version: 'latest',
+            platform: 'OS X 10.10',
+            name: "firefox-tests",
+            shardTestFiles: true,
+            maxInstances: 25
+        }, {
+            browserName: 'chrome',
+            version: '41',
+            platform: 'Windows 7',
+            name: "chrome-tests",
+            shardTestFiles: true,
+            maxInstances: 25
+        }],
+  //  capabilities: {
+  //   browserName: 'chrome'
+  // },
   
   specs: ['test.spec.js'], 
 
