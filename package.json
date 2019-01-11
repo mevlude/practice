@@ -1,0 +1,22 @@
+{
+  "name": "americannational",
+  "version": "1.0.0",
+  "description": "\"get quote\"",
+  "main": "test.spec.js",
+  "dependencies": {
+    "protractor": "^5.4.2"
+  },
+  "devDependencies": {
+    "jasmine-allure-reporter": "^1.0.2",
+    "jasmine-spec-reporter": "^4.2.1",
+    "protractor-beautiful-reporter": "^1.2.7"
+  },
+  "scripts": {
+    "test": "protractor conf.js"
+  },
+  "keywords": [
+    "protractor"
+  ],
+  "author": "eva",
+  "license": "ISC"
+}
